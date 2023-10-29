@@ -29,7 +29,8 @@ const Login = () => {
                 }, 1000);
             })
             .catch((error) => {
-                notificationController.error(error.response.data.message)
+                // notificationController.error(error.response.data.message)
+                console.log(error)
             });
     };
 
