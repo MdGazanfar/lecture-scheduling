@@ -11,7 +11,13 @@ app.get('/', (req, res) => {
     res.send('Hello, This is my backend for lecture schedule portal!');
 });
 
-app.use(cors());
+app.use(cors(
+    {
+        origin:["https://mdgazan-lecture-scheduling.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', process.env.FRONTEND_URL);
