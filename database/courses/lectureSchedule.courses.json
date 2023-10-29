@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "653e4c5e229dafe5940adee8"
+  },
+  "name": "Django Course",
+  "level": "intermediate",
+  "description": "Python Framework",
+  "batches": "first"
+},
+{
+  "_id": {
+    "$oid": "653e4c70229dafe5940adeeb"
+  },
+  "name": "Mern Full Stack Course",
+  "level": "hard",
+  "description": "React and Node",
+  "batches": "first"
+},
+{
+  "_id": {
+    "$oid": "653e66c7621f5b7e43f22664"
+  },
+  "name": "SpringBoot Course",
+  "level": "hard",
+  "description": "Java Library",
+  "batches": "first"
+}]

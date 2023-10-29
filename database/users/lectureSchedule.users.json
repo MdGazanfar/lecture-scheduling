@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "653e4b4b229dafe5940aded8"
+  },
+  "name": "Admin",
+  "password": "$2b$10$i/WoqJJess7B5jygdbKpFuXaOZ8dOmSs1kjmDy0BJ782iUynBpmbG",
+  "userType": "admin"
+},
+{
+  "_id": {
+    "$oid": "653e4b88229dafe5940adedb"
+  },
+  "name": "React Lecturer",
+  "password": "$2b$10$3ZbKKsz9DeW5t/6gC0oTw.tlBTeojmYHlm7uNjluKLYZtEBB2Qsja",
+  "userType": "lecturer"
+},
+{
+  "_id": {
+    "$oid": "653e4b9c229dafe5940adede"
+  },
+  "name": "Node Lecturer",
+  "password": "$2b$10$/ABWePHhzC7P/7qyYpNQyuxZZfG6wHhEmdqFxDjNWUhTieK3kB6su",
+  "userType": "lecturer"
+},
+{
+  "_id": {
+    "$oid": "653e4bb4229dafe5940adee1"
+  },
+  "name": "Python Lecturer",
+  "password": "$2b$10$K6XwiJK3LVK6OoSFDWDB8esdLN9O4xnfWSoEy8R/5ZDqWSR9wNmCO",
+  "userType": "lecturer"
+},
+{
+  "_id": {
+    "$oid": "653e4bcc229dafe5940adee4"
+  },
+  "name": "Mern Lecturer",
+  "password": "$2b$10$OS6Mbhb4hH774Mscnc2FxuXKyC9.Vsj5KatToplaTz5v/vZC5QWE2",
+  "userType": "lecturer"
+},
+{
+  "_id": {
+    "$oid": "653e668f621f5b7e43f22659"
+  },
+  "name": "Java Lecturer",
+  "password": "$2b$10$d11fzbeIcmEOTT5PpteEWe/sQfm17wBSJXLow4XuLygASxlVP1hCW",
+  "userType": "lecturer"
+}]

@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "653e4cc9229dafe5940adeee"
+  },
+  "name": "Django First Lecture",
+  "courseId": {
+    "$oid": "653e4c5e229dafe5940adee8"
+  },
+  "lecturerId": {
+    "$oid": "653e4bb4229dafe5940adee1"
+  },
+  "lecturerDate": {
+    "$date": "2023-10-27T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "653e4cdd229dafe5940adef2"
+  },
+  "name": "Django Second Lecture",
+  "courseId": {
+    "$oid": "653e4c5e229dafe5940adee8"
+  },
+  "lecturerId": {
+    "$oid": "653e4bb4229dafe5940adee1"
+  },
+  "lecturerDate": {
+    "$date": "2023-10-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "653e4d03229dafe5940adef5"
+  },
+  "name": "React First Lecture",
+  "courseId": {
+    "$oid": "653e4c70229dafe5940adeeb"
+  },
+  "lecturerId": {
+    "$oid": "653e4b88229dafe5940adedb"
+  },
+  "lecturerDate": {
+    "$date": "2023-10-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "653e66e2621f5b7e43f2266f"
+  },
+  "name": "Java First Lecture",
+  "courseId": {
+    "$oid": "653e66c7621f5b7e43f22664"
+  },
+  "lecturerId": {
+    "$oid": "653e668f621f5b7e43f22659"
+  },
+  "lecturerDate": {
+    "$date": "2023-10-29T00:00:00.000Z"
+  }
+}]
