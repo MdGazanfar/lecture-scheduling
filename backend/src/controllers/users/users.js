@@ -29,6 +29,10 @@ const login = async (req, res) => {
         const { name, password } = req.body;
         const user = await User.findOne({ name });
 
+        if (!name || !password) {
+            return res.status(400).json({ message: 'Name and Password are required' });
+        }
+
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
