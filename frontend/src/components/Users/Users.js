@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Stack, Typography, Button } from '@mui/material';
-import { deleteToken } from '../../utils/localStorage';
+import { deleteToken, deleteUserData } from '../../utils/localStorage';
 import { useNavigate } from 'react-router';
 import { Table } from "antd";
 import axios from '../../utils/axios';
@@ -11,6 +11,7 @@ const Users = () => {
 
   const handleLogout = () => {
     deleteToken();
+    deleteUserData();
     navigate('/login')
   }
 

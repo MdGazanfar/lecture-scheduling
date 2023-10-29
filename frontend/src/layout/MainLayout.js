@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { Drawer, List, ListItem, Container, Typography } from '@mui/material';
+import { readUserData } from '../utils/localStorage';
 import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
 
     const navigate = useNavigate();
     const [activeRoute, setActiveRoute] = useState('')
+
+    const type = readUserData()
 
     const handleRedirection = (route) => {
         if (route === 'dashboard') {
@@ -45,16 +48,24 @@ const MainLayout = () => {
                             Dashboard
                         </Typography>
                     </ListItem>
-                    <ListItem onClick={() => handleRedirection('users')} >
-                        <Typography style={{ fontSize: '18px', color: activeRoute === 'users' ? '#FFF' : '#1E1E2C' }}>
-                            Users
-                        </Typography>
-                    </ListItem>
-                    <ListItem onClick={() => handleRedirection('courses')} >
-                        <Typography style={{ fontSize: '18px', color: activeRoute === 'courses' ? '#FFF' : '#1E1E2C' }}>
-                            Courses
-                        </Typography>
-                    </ListItem>
+                    {
+                        type === 'admin' ?
+                            <ListItem onClick={() => handleRedirection('users')} >
+                                <Typography style={{ fontSize: '18px', color: activeRoute === 'users' ? '#FFF' : '#1E1E2C' }}>
+                                    Users
+                                </Typography>
+                            </ListItem>
+                            : null
+                    }
+                    {
+                        type === 'admin' ?
+                            <ListItem onClick={() => handleRedirection('courses')} >
+                                <Typography style={{ fontSize: '18px', color: activeRoute === 'courses' ? '#FFF' : '#1E1E2C' }}>
+                                    Courses
+                                </Typography>
+                            </ListItem>
+                            : null
+                    }
                     <ListItem onClick={() => handleRedirection('lectures')} >
                         <Typography style={{ fontSize: '18px', color: activeRoute === 'lectures' ? '#FFF' : '#1E1E2C' }}>
                             Lectures

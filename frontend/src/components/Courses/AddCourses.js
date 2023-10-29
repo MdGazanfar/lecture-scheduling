@@ -29,7 +29,6 @@ const AddCourses = () => {
       })
       .catch((error) => {
         console.error('Error:', error);
-        notificationController.error(error.response.data.error)
       });
   };
 

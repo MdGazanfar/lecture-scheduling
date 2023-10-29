@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
-import { deleteToken } from '../utils/localStorage';
+import { deleteToken, deleteUserData } from '../utils/localStorage';
 import { useNavigate } from 'react-router';
 
 const Dashboard = () => {
@@ -8,6 +8,7 @@ const Dashboard = () => {
 
   const handleLogout = () => {
     deleteToken();
+    deleteUserData()
     navigate('/login')
   }
 

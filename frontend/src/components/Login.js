@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { TextField, Button, Grid, Paper, Typography } from '@mui/material';
 import axios from '../utils/axios';
-import { persistToken } from '../utils/localStorage';
+import { persistToken, persistUserData } from '../utils/localStorage';
 import { notificationController } from '../utils/toast';
 
 const Login = () => {
@@ -20,7 +20,9 @@ const Login = () => {
         return axios.post('user/login', data)
             .then((res) => {
                 const token = res.data.token
+                const type = res.data.userData.type
                 persistToken(token)
+                persistUserData(type)
                 notificationController.success('Login Successfully')
                 setTimeout(() => {
                     navigate("/");

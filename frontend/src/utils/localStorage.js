@@ -7,3 +7,13 @@ export const readToken = () => {
 };
 
 export const deleteToken = () => localStorage.removeItem("authToken");
+
+export const persistUserData = (type) => {
+    localStorage.setItem("userType", type);
+};
+
+export const readUserData = () => {
+    return localStorage.getItem("userType");
+};
+
+export const deleteUserData = () => localStorage.removeItem("userType");
